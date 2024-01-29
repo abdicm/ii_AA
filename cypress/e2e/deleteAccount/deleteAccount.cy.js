@@ -17,7 +17,6 @@ describe('Delete account flow', () => {
   });
 
   it('should delete the account on automationexercise website', function () {
-    // log.login()
     delete_account.deleteUser();                  
 
   });

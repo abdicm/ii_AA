@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 import { slowCypressDown } from "cypress-slow-down";
-import * as log from "../login/helper/helper.login"
 import * as sign from "../signup/helper/helper.signup"
 
 describe('Signup flow', () => {

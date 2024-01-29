@@ -30,8 +30,8 @@ exports.cart = cart
 function payment() {
     purchaseSupport.heading().contains("Payment").should("exist").should("be.visible").click();
     purchaseSupport.creditCardName().should("exist").should("be.visible").type("Test");
-    purchaseSupport.creditCardNumber().should("exist").should("be.visible").type("Test");
-    purchaseSupport.cvcNumber().should("exist").should("be.visible").type("378282246310005");
+    purchaseSupport.creditCardNumber().should("exist").should("be.visible").type("378282246310005");
+    purchaseSupport.cvcNumber().should("exist").should("be.visible").type("001");
     purchaseSupport.expiryMonth().should("exist").should("be.visible").type("11");
     purchaseSupport.expiryYear().should("exist").should("be.visible").type("2027");
     purchaseSupport.payButton().should('have.text', 'Pay and Confirm Order').should("exist").should("be.visible").click();
