@@ -18,24 +18,57 @@ export default {
         return cy.get('.product-information').find('h2')
     },
     addToCart() {
-        return cy.get('.fa.fa-shopping-cart')
+        return cy.get('.btn.btn-default.cart')
     },
-    loginButton() {
-        return cy.get('[data-qa="login-button"]')
+    modalTitle() {
+        return cy.get('.modal-title.w-100')
     },
-    loginButton() {
-        return cy.get('[data-qa="login-button"]')
+    continueShoppingButton() {
+        return cy.get('.btn.btn-success.close-modal.btn-block')
     },
-    loginButton() {
-        return cy.get('[data-qa="login-button"]')
+    cart() {
+        return cy.get('li a[href="/view_cart"]').find('i.fa.fa-shopping-cart')
     },
-    loginButton() {
-        return cy.get('[data-qa="login-button"]')
+    cartDescription() {
+        return cy.get('td.cart_description')
     },
-    loginButton() {
-        return cy.get('[data-qa="login-button"]')
+    cartCheckoutButton() {
+        return cy.get('.btn.btn-default.check_out')
     },
-    loginButton() {
-        return cy.get('[data-qa="login-button"]')
+    heading() {
+        return cy.get('h2.heading')
+    },
+    cartTotalPrice() {
+        return cy.get('p.cart_total_price')
+    },
+    placeorderButton() {
+        return cy.get('.btn.btn-default.check_out')
+    },
+    creditCardName() {
+        return cy.get('[data-qa="name-on-card"]')
+    },
+    creditCardNumber() {
+        return cy.get('[data-qa="card-number"]')
+    },
+    cvcNumber() {
+        return cy.get('[data-qa="cvc"]')
+    },
+    expiryMonth() {
+        return cy.get('[data-qa="expiry-month"]')
+    },
+    expiryYear() {
+        return cy.get('[data-qa="expiry-year"]')
+    },
+    payButton() {
+        return cy.get('[data-qa="pay-button"]')
+    },
+    orderPlacedHeading() {
+        return cy.get('[data-qa="order-placed"]')
+    },
+    orderPlacedContinueButton() {
+        return cy.get('[data-qa="continue-button"]')
+    },
+    featuresItems() {
+        return cy.get('.title.text-center')
     }
 }

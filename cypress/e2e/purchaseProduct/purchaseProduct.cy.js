@@ -19,7 +19,9 @@ describe('Purchase item flow', () => {
 
   it('should purchase an item on automationexercise website', function () {
     log.login()
-    purchase.purchaseProduct();                  
+    purchase.purchaseProduct();
+    purchase.cart();   
+    purchase.payment()            
 
   });
 });
